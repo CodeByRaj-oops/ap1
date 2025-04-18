@@ -1,0 +1,32 @@
+{
+  "name": "genre-book-summarizer",
+  "version": "1.0.0",
+  "description": "AI-Powered Book Recommender and Genre-Based Summarizer",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install:all": "npm install && npm run install:server && npm run install:client",
+    "build": "cd client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "book",
+    "recommendation",
+    "ai",
+    "summary",
+    "genre",
+    "openai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
